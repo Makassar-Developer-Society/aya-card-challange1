@@ -8,7 +8,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-   
+
   },
   paper: {
     padding: theme.spacing(2),
@@ -29,52 +29,48 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: '100%',
   },
 }));
-  
-function App(){
 
-    const classes = useStyles();
-    return (
-        <Grid md={12}>
+function App() {
 
-        
-        <div  className={classes.root}>
-            <Grid   container  justify="center" style={{ minHeight: '100vh' }}>
-                <Paper  className={classes.paper}>
-                    <Grid  alignItems="center" container  justify="center" >
-                    <Grid  item>
-                        <ButtonBase  className={classes.image}>
-                        <img className={classes.img} alt="complex" src="http://placekitten.com/g/500/500" />
-                        </ButtonBase>
-                    </Grid>
-                    <Grid  item xs={12} sm container>
-                        <Grid item xs container  direction="column" spacing={2}>
-                        <Grid alignItems="center" item xs>
-                            <Typography gutterBottom variant="subtitle1">
-                            <strong>Biodata</strong>
-                            </Typography>
-                            <Typography  >
-                            Nurhidayah Tasmin
-                            </Typography>
-                            <Typography>
-                                Ujung Pandang, 3 Maret 1998
-                            </Typography>
-                            <Typography >
-                            Mahasiswi Hampir Selesai
-                            </Typography>
-                            <Typography>
-                                <span>Instagram : @nurhidayah_tasmin</span>
-                            </Typography>
-                        </Grid>
-
-                        </Grid>
-                    
-                    </Grid>
-                    </Grid>
-                </Paper>
+  const classes = useStyles();
+  return (
+    <div className={classes.root}>
+      <Grid container justify="center" style={{ minHeight: '100vh' }}>
+        <Paper className={classes.paper}>
+          <Grid alignItems="center" container justify="center" >
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img className={classes.img} alt="complex" src="http://placekitten.com/g/500/500" />
+              </ButtonBase>
             </Grid>
-        </div>
-        </Grid>
-      );
+            <Grid item xs={12} sm>
+              <Grid container direction="column" spacing={2}>
+                <Grid item xs>
+                  <Typography gutterBottom variant="subtitle1">
+                    <strong>Biodata</strong>
+                  </Typography>
+                  <Typography  >
+                    Nurhidayah Tasmin
+                            </Typography>
+                  <Typography>
+                    Ujung Pandang, 3 Maret 1998
+                            </Typography>
+                  <Typography >
+                    Mahasiswi Hampir Selesai
+                            </Typography>
+                  <Typography>
+                    <span>Instagram : @nurhidayah_tasmin</span>
+                  </Typography>
+                </Grid>
+
+              </Grid>
+
+            </Grid>
+          </Grid>
+        </Paper>
+      </Grid>
+    </div>
+  );
 }
 
 
